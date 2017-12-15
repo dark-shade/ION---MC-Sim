@@ -39,6 +39,7 @@
 ## STEPS
 
 #### 1. Wifi connection, [(https://learn.adafruit.com/adafruits-raspberry-pi-lesson-3-network-setup/setting-up-wifi-with-occidentalis) ](https://learn.adafruit.com/adafruits-raspberry-pi-lesson-3-network-setup/setting-up-wifi-with-occidentalis)
+#####  NOTE: Wifi Connection when connecting to Enterprise network like that of a university which needs username and password, see step 2 in here [(https://gist.github.com/chatchavan/3c58511e3d48f478b0c2)](https://gist.github.com/chatchavan/3c58511e3d48f478b0c2) 
 
 #### 2. Change hostname [(https://www.howtogeek.com/167195/how-to-change-your-raspberry-pi-or-other-linux-devices-hostname/)](https://www.howtogeek.com/167195/how-to-change-your-raspberry-pi-or-other-linux-devices-hostname/)
 
