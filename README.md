@@ -1,8 +1,8 @@
 # CS 441: Engineering Distributed Objects For Cloud Computing Final Project [Fall 2017]
 ## Index:
-[Description](#Description)
+[Description](#description)
 
-[Team Pic](#Team-Pic)
+[Team Pic](#team-pic)
 
 
 ### Description: Create a Monte-Carlo simulator for evaluating stock purchase decisions that runs on Spark and deployed on your private OctoPi cloud.
