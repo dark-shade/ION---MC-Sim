@@ -5,7 +5,7 @@
 # How to run
 #### 1. Open terminal
 #### 2. Change to docker file directory using `cd docker_cloud_final/`
-#### 3. Check if a container of name `simulator` is already running
+#### 3. Check if a container of name `simulator` is already running by executing `docker ps`
 #### 4. If a container is running then delete it using `docker rm simulator`
 #### 5. Now, execute `docker build .`
 #### 6. After the successful build, copy the build id (the random number in the last line)
