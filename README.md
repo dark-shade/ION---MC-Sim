@@ -3,14 +3,14 @@
 ### Description: Create a Monte-Carlo simulator for evaluating stock purchase decisions that runs on Spark and deployed on your private OctoPi cloud.
 
 # How to run
-#### 1. Open terminal.
-#### 2. Change to docker file directory using `cd docker_cloud_final/`.
-#### 3. Check if a container of name `simulator` is already running.
-#### 4. If a container is running then delete it using `docker rm simulator`.
-#### 5. Now, execute `docker build .`.
-#### 6. After the successful build, copy the build id (the random number in the last line).
-#### 7. Now, execute `docker run --name simulator <the build id>` (it would be something like `docker run --name simulator a01a7738b573`).
-#### 8. Now, wait for it to complete, it would take 15 mins to 30 mins for it to complete.
+#### 1. Open terminal
+#### 2. Change to docker file directory using `cd docker_cloud_final/`
+#### 3. Check if a container of name `simulator` is already running
+#### 4. If a container is running then delete it using `docker rm simulator`
+#### 5. Now, execute `docker build .`
+#### 6. After the successful build, copy the build id (the random number in the last line)
+#### 7. Now, execute `docker run --name simulator <the build id>` (it would be something like `docker run --name simulator a01a7738b573`)
+#### 8. Now, wait for it to complete, it would take 15 mins to 30 mins for it to complete
 
 
 #Hardware required
