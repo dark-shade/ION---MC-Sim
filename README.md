@@ -1,14 +1,19 @@
 # CS 441: Engineering Distributed Objects For Cloud Computing Final Project [Fall 2017]
-## Index:
-[Description](#description)
-
-[Team Pic](#team-pic)
-
 
 ### Description: Create a Monte-Carlo simulator for evaluating stock purchase decisions that runs on Spark and deployed on your private OctoPi cloud.
 
-#Hardware required
+# How to run
+#### 1. Open terminal.
+#### 2. Change to docker file directory using `cd docker_cloud_final/`.
+#### 3. Check if a container of name `simulator` is already running.
+#### 4. If a container is running then delete it using `docker rm simulator`.
+#### 5. Now, execute `docker build .`.
+#### 6. After the successful build, copy the build id (the random number in the last line).
+#### 7. Now, execute `docker run --name simulator <the build id>` (it would be something like `docker run --name simulator a01a7738b573`).
+#### 8. Now, wait for it to complete, it would take 15 mins to 30 mins for it to complete.
 
+
+#Hardware required
 * Raspberry PIs [[Buy](https://www.amazon.com/Raspberry-Pi-RASPBERRYPI3-MODB-1GB-Model-Motherboard/dp/B01CD5VC92)]
 * Power suppy [[Buy](https://www.amazon.com/CanaKit-Raspberry-Supply-Adapter-Charger/dp/B00MARDJZ4/ref=pd_bxgy_147_2?_encoding=UTF8&psc=1&refRID=6M8CYG5AKF2YM9H09JBN)]
 * SD card [[Buy](https://www.amazon.com/Samsung-MicroSD-Adapter-MB-ME32GA-AM/dp/B06XWN9Q99/ref=pd_bxgy_147_3?_encoding=UTF8&psc=1&refRID=6M8CYG5AKF2YM9H09JBN)]
@@ -24,11 +29,11 @@
 #### 3. [Install vnc server on raspbian](https://www.raspberrypi.org/documentation/remote-access/vnc/)
 #### 4. Install vnc viewer on your laptop [same as above]
 #### 5. [Change hostname](https://www.cyberciti.biz/faq/ubuntu-change-hostname-command/)
-#### 6. Follow k8s here [link](https://gist.github.com/alexellis/fdbc90de7691a1b9edb545c17da2d975), but after kubeadm init, forward ipTables
-#### 7. If kube-dns is not working then possibly nodes are not yet ready or you did not install a network driver, check dns pod status using: 
-``` kubectl --namespace=kube-system describe pod <pod-name> ``` 
-#### you can get pod-name using: 
-``` kubectl get pods --namespace=kube-system```
+#### 6. Follow k8s here [link](https://gist.github.com/alexellis/fdbc90de7691a1b9edb545c17da2d975), but after kubeadm init, forward ipTables [execute ```sudo iptables -P FORWARD ACCEPT``` on every node].
+#### 7. If kube-dns is not working then possibly nodes are not yet ready or you did not install a network driver, check dns pod status using:
+ ``` kubectl --namespace=kube-system describe pod <pod-name> ``` 
+ #### you can get pod-name using: 
+ ``` kubectl get pods --namespace=kube-system```
 
 
 ## STEPS
@@ -37,15 +42,15 @@
 
 #### 2. Change hostname [(https://www.howtogeek.com/167195/how-to-change-your-raspberry-pi-or-other-linux-devices-hostname/)](https://www.howtogeek.com/167195/how-to-change-your-raspberry-pi-or-other-linux-devices-hostname/)
 
-#### 3. Create Swap partition as the Ram is less [(https://www.centos.org/docs/5/html/5.2/Deployment_Guide/s2-swap-creating-file.html)]
+#### 3. Create Swap partition as the Ram is less (only on worker nodes) [(https://www.centos.org/docs/5/html/5.2/Deployment_Guide/s2-swap-creating-file.html)]
 (https://www.centos.org/docs/5/html/5.2/Deployment_Guide/s2-swap-creating-file.html)
 
-#### 4. pull base docker image of Ubuntu ARM [(https://hub.docker.com/r/armv7/armhf-ubuntu/)](https://hub.docker.com/r/armv7/armhf-ubuntu/)
+#### 4. Pull base docker image of Ubuntu ARM [(https://hub.docker.com/r/armv7/armhf-ubuntu/)](https://hub.docker.com/r/armv7/armhf-ubuntu/)
 
 #### 5. Open docker terminal and type
 ``` docker run -it -expose amr7/ubuntu:latest bash```
 
-#### 6. add apt-get
+#### 6. Add apt-get
 ```apt install software-properties-common ```
 
 #### 7. Install Java8 [http://www.webupd8.org/2012/09/install-oracle-java-8-in-ubuntu-via-ppa.html](http://www.webupd8.org/2012/09/install-oracle-java-8-in-ubuntu-via-ppa.html)
