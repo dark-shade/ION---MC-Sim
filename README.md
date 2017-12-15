@@ -92,7 +92,7 @@ ssh master
 #### 17. Copy Input and project Jar files to Raspberry Pi
 ```
 pscp -r C:\Users\Ragha\Desktop\filesToCopy\MyMonte\input pirate@192.168.1.29:
-```
+l```
 
 #### 18. Copy Input and project Jar files to Docker
 ```
@@ -135,14 +135,14 @@ docker pull raghavendrasomannavar/montecarlo:1.0.0
 
 ### Team members ###
 
-* Sankul Rawat [[LinkedIn profile](https://www.linkedin.com/in/sankulrawat/)]
-* Harsh P Bajaj [[LinkedIn profile](https://www.linkedin.com/in/harshbajaj543/)]
-* Muttavarapu Sreeharsha [[LinkedIn profile](https://www.linkedin.com/in/sreeharsha-m-8a020569/)]
-* Raghavendra Somannavar [[LinkedIn profile](https://www.linkedin.com/in/raghavendra-somannavar-a8583788/)]
-* Harshit Pant [[LinkedIn profile](https://www.linkedin.com/in/harshit-pant-854468ba/)]
-* Rushit Thakker [[LinkedIn profile](https://www.linkedin.com/in/rushit-thakker-7928a364/)]
-* Jose George [[LinkedIn profile](https://www.linkedin.com/in/jose-george-90615885/)]
-* Sai Sharan Nagulapalli [[LinkedIn profile](https://www.linkedin.com/in/sharandec7/)]
+* Sankul Rawat (srawat5@uic.edu)  [[LinkedIn profile](https://www.linkedin.com/in/sankulrawat/)]
+* Harsh P Bajaj (hbajaj3@uic.edu) [[LinkedIn profile](https://www.linkedin.com/in/harshbajaj543/)]
+* Muttavarapu Sreeharsha (msreeh2@uic.edu)  [[LinkedIn profile](https://www.linkedin.com/in/sreeharsha-m-8a020569/)]
+* Raghavendra Somannavar (rsoman2@uic.edu) [[LinkedIn profile](https://www.linkedin.com/in/raghavendra-somannavar-a8583788/)]
+* Harshit Pant  (hpant2@uic.edu)  [[LinkedIn profile](https://www.linkedin.com/in/harshit-pant-854468ba/)]
+* Rushit Thakker  (rthakk6@uic.edu) [[LinkedIn profile](https://www.linkedin.com/in/rushit-thakker-7928a364/)]
+* Jose George (jgeorg41@uic.edu) [[LinkedIn profile](https://www.linkedin.com/in/jose-george-90615885/)]
+* Sai Sharan Nagulapalli (snagul2@uic.edu [[LinkedIn profile](https://www.linkedin.com/in/sharandec7/)]
 
 ### Team Pic ###
 ![picture](Images/teamPic.jpeg)
