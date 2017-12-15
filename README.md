@@ -2,6 +2,8 @@
 ## Index:
 [Description](#Description)
 
+[Team Pic](#Team-Pic)
+
 
 ### Description: Create a Monte-Carlo simulator for evaluating stock purchase decisions that runs on Spark and deployed on your private OctoPi cloud.
 
